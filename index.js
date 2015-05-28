@@ -41,11 +41,11 @@ var buildCommand = function(options) {
     }
 
     if (opt.hasOwnProperty('ignoreWarningsOnExit')) {
-        command += ' --runtime-set ignore_warnings_on_exit' + opt.ignoreWarningsOnExit;
+        command += ' --runtime-set ignore_warnings_on_exit ' + Boolean(opt.ignoreWarningsOnExit);
     }
 
     if (opt.hasOwnProperty('ignoreErrorsOnExit')) {
-        command += ' --runtime-set ignore_errors_on_exit' + opt.ignoreErrorsOnExit;
+        command += ' --runtime-set ignore_errors_on_exit ' + Boolean(opt.ignoreErrorsOnExit);
     }
 
     return command;
