@@ -40,6 +40,14 @@ var buildCommand = function(options) {
         command += ' --colors';
     }
 
+    if (opt.hasOwnProperty('ignoreWarningsOnExit')) {
+        command += ' --runtime-set ignore_warnings_on_exit' + opt.ignoreWarningsOnExit;
+    }
+
+    if (opt.hasOwnProperty('ignoreErrorsOnExit')) {
+        command += ' --runtime-set ignore_errors_on_exit' + opt.ignoreErrorsOnExit;
+    }
+
     return command;
 };
 

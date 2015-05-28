@@ -104,6 +104,18 @@ This option is equivalent to Code Sniffer `--colors` option.
 
 **Warning**: This options is only compatible with 2.x branch of Code Sniffer.
 
+#### options.ignoreWarningsOnExit
+
+Type: `Boolean`
+
+This options is equivalent to Code Sniffer `--runtime-set ignore_warnings_on_exit (true|false)` option.
+
+#### options.ignoreErrorsOnExit
+
+Type: `Boolean`
+
+This options is equivalent to Code Sniffer `--runtime-set ignore_errors_on_exit (true|false)` option.
+
 ### phpcs.reporter(name)
 
 Loads one of the reporters that shipped with the plugin (see below).
